@@ -1,0 +1,6 @@
+pylene/head@lrde/stable
+
+[generator]
+cmake
+cmake_find_package
+cmake_paths
