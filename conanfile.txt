@@ -1,6 +1,13 @@
+[requires]
+range-v3/0.10.0
 pylene/head@lrde/stable
+pybind11/2.5.0
 
-[generator]
+[generators]
 cmake
 cmake_find_package
 cmake_paths
+
+[options]
+pylene:fPIC=True
+pylene:shared=True
