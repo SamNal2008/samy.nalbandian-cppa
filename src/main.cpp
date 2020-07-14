@@ -10,5 +10,5 @@
 
 int main(void)
 {
-    numpy_to_ndbuffer(py::array_t([1,2,3,4,5,6]));
+    numpy_to_ndbuffer(pybind11::array_t<int>(5));
 }

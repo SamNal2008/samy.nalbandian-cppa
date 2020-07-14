@@ -29,8 +29,10 @@ add_subdirectory(${CMAKE_SOURCE_DIR}/include/pybind11)
 find_package(pybind11 REQUIRED)
 include_directories(${PYTHON_INCLUDE_DIRS})
 
-pybind11_add_module(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/src/main.cpp)
 #add_executable(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/src/main.cpp)
+pybind11_add_module(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/src/main.cpp)
 
 target_link_libraries(${PROJECT_NAME} PRIVATE Pylene::Pylene)
+#target_link_libraries(${PROJECT_NAME}_lib PUBLIC ${PROJECT_NAME})
+
 #target_link_libraries(${PROJECT_NAME} ${PYTHON_LIBRARIES})
